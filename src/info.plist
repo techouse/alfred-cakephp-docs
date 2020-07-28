@@ -102,7 +102,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Search the CakePHP documentation using Alfred</string>
 	<key>uidata</key>
 	<dict>
 		<key>0F43256B-6EC8-41E0-8BB1-615AC5376BF2</key>
@@ -120,7 +120,11 @@
 			<integer>55</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/techouse/alfred-cakephp-docs</string>
 </dict>
 </plist>
