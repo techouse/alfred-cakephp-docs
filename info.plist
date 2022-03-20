@@ -8,11 +8,36 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
+		<key>689C121E-182D-4586-B795-43DDEE3E0946</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7716A59-E7C0-47BD-AEA8-ED9BDAA9146D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>D850B7E1-B6F7-4A5E-8EF6-522CBF4E0A21</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0F43256B-6EC8-41E0-8BB1-615AC5376BF2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9BC7CABD-964F-4A1A-A831-7FE9D57891E2</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0F43256B-6EC8-41E0-8BB1-615AC5376BF2</string>
+				<string>689C121E-182D-4586-B795-43DDEE3E0946</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -32,6 +57,29 @@
 	<string>CakePHP Docs</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./docs -u</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D7716A59-E7C0-47BD-AEA8-ED9BDAA9146D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -60,7 +108,7 @@
 				<key>runningsubtext</key>
 				<string>Searching CakePHP docs for "{query}"...</string>
 				<key>script</key>
-				<string>/usr/bin/python docs.py "{query}"</string>
+				<string>./docs -q "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -80,6 +128,36 @@
 			<string>9BC7CABD-964F-4A1A-A831-7FE9D57891E2</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>update:workflow</string>
+						<key>outputlabel</key>
+						<string>Update Workflow</string>
+						<key>uid</key>
+						<string>D850B7E1-B6F7-4A5E-8EF6-522CBF4E0A21</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Open URL</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>689C121E-182D-4586-B795-43DDEE3E0946</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -108,22 +186,36 @@
 		<key>0F43256B-6EC8-41E0-8BB1-615AC5376BF2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>385</integer>
+			<integer>840</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>505</integer>
+		</dict>
+		<key>689C121E-182D-4586-B795-43DDEE3E0946</key>
+		<dict>
+			<key>xpos</key>
+			<integer>615</integer>
+			<key>ypos</key>
+			<integer>355</integer>
 		</dict>
 		<key>9BC7CABD-964F-4A1A-A831-7FE9D57891E2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>205</integer>
+			<integer>385</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>335</integer>
+		</dict>
+		<key>D7716A59-E7C0-47BD-AEA8-ED9BDAA9146D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>845</integer>
+			<key>ypos</key>
+			<integer>180</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>2.0.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/techouse/alfred-cakephp-docs</string>
 </dict>
