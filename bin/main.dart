@@ -78,9 +78,9 @@ void main(List<String> arguments) async {
   } finally {
     if (!update) {
       if (await updater.updateAvailable()) {
-        stdout.write(await workflow.toJsonString(addToBeginning: updateItem));
+        workflow.run(addToBeginning: updateItem);
       } else {
-        stdout.write(await workflow.toJsonString());
+        workflow.run();
       }
     }
   }

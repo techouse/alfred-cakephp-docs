@@ -13,10 +13,10 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: ad6f18f1170389049f6e79d56f414ab3b8cd8acc
+      resolved-ref: ecbe8de5c4b6cc997836a4b62111a105a4352979
       url: "git@github.com:techouse/alfred_workflow.git"
     source: git
-    version: "0.0.7"
+    version: "0.0.8"
   algolia:
     dependency: "direct main"
     description:
