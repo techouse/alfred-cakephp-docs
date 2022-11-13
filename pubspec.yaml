@@ -13,6 +13,7 @@ dependencies:
   algolia: ^1.1.1
   args: ^2.3.0
   alfred_workflow: ^0.2.10
+  cli_script: ^0.2.6
   collection: ^1.16.0
   json_annotation: ^4.7.0
 
