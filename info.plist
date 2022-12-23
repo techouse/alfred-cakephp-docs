@@ -65,7 +65,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./docs -u</string>
+				<string>arch -x86_64 ./docs -u</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -108,7 +108,7 @@
 				<key>runningsubtext</key>
 				<string>Searching CakePHP docs for "{query}"...</string>
 				<key>script</key>
-				<string>./docs -q "{query}"</string>
+				<string>arch -x86_64 ./docs -q "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -151,6 +151,8 @@
 				</array>
 				<key>elselabel</key>
 				<string>Open URL</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -164,12 +166,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -186,32 +190,34 @@
 		<key>0F43256B-6EC8-41E0-8BB1-615AC5376BF2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>840</integer>
+			<real>840</real>
 			<key>ypos</key>
-			<integer>505</integer>
+			<real>505</real>
 		</dict>
 		<key>689C121E-182D-4586-B795-43DDEE3E0946</key>
 		<dict>
 			<key>xpos</key>
-			<integer>615</integer>
+			<real>615</real>
 			<key>ypos</key>
-			<integer>355</integer>
+			<real>355</real>
 		</dict>
 		<key>9BC7CABD-964F-4A1A-A831-7FE9D57891E2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>385</integer>
+			<real>385</real>
 			<key>ypos</key>
-			<integer>335</integer>
+			<real>335</real>
 		</dict>
 		<key>D7716A59-E7C0-47BD-AEA8-ED9BDAA9146D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>845</integer>
+			<real>845</real>
 			<key>ypos</key>
-			<integer>180</integer>
+			<real>180</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
