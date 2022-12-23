@@ -1,5 +1,5 @@
-name: flask_docs_alfred_workflow
-description: Search the Flask documentation using Alfred
+name: cakephp_docs_alfred_workflow
+description: Search the CakePHP documentation using Alfred
 
 # Prevent accidental publishing to pub.dev.
 publish_to: 'none'
