@@ -38,11 +38,10 @@ Future<void> _performSearch(String query, {String? version}) async {
     if (searchResponse.nbHits > 0) {
       final AlfredItems items = AlfredItems(
         searchResponse.hits
-            .map((Hit hit) =>
-            SearchResult.fromJson(
+            .map((Hit hit) => SearchResult.fromJson(
                 <String, dynamic>{...hit, 'objectID': hit.objectID}))
             .map(
-              (SearchResult result) {
+          (SearchResult result) {
             return AlfredItem(
               uid: result.objectID,
               title: result.title,
@@ -62,7 +61,7 @@ Future<void> _performSearch(String query, {String? version}) async {
       _workflow.addItems(items.items);
     } else {
       final Uri url =
-      Uri.https('www.google.com', '/search', {'q': 'CakePHP $query'});
+          Uri.https('www.google.com', '/search', {'q': 'CakePHP $query'});
 
       _workflow.addItem(
         AlfredItem(
